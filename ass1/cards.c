@@ -15,6 +15,7 @@ double strategyB(int);
 int main(int argc, char **argv)
 {
    // prompt the user to enter number of cards for this experiments
+    printf("Enter the number of cards (3 ~ 10): ");
     int n_cards; scanf("%d",&n_cards);
 
     printf("strategyA (Theoritic):   %lf\n", strategyA_Theoritical(n_cards));
@@ -97,4 +98,8 @@ double strategyB(int n_cards)
     return wins / N_TRIALS;
 
 }
+
+/*
+ * StrategyB is clearly better
+ */
 
